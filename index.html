@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Converter & Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="converter" class="view">
+            <button class="toggle-button" onclick="toggleView()">☰</button>
+            <h1>CGPA to Percentage Converter</h1>
+            <label for="cgpa">Enter CGPA:</label>
+            <input type="number" id="cgpa" step="0.01" min="0" max="10" placeholder="Enter CGPA">
+            <button onclick="convertCGPA()">Convert</button>
+            <p id="result"></p>
+        </div>
+        
+        <div id="profile" class="view hidden">
+            <button class="toggle-button" onclick="toggleView()">☰</button>
+            <h1>@copyright</h1>
+            <img src="img/photo.jpeg" alt="Your Photo" class="profile-photo">
+            <p>© 2024 <span mailto:someshgnal123©gmail.com>someshgnal123©gmail.com</span><br> | All Rights Reserved |</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
